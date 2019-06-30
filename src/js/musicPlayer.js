@@ -1,4 +1,4 @@
-// ---------- dodanie zdarzeń do klików html elementów -----
+// --------------- Zarządzanie muzyką  ---------------
 
 import Visualizer from './visualizer';
 
@@ -66,7 +66,7 @@ export default class MusicPlayer {
         });
     }
 
-    // ----- zdarzenia klawiatóra -----
+    // ----- zdarzenia klawiatura -----
 
     keyboardInit = () => {
         document.addEventListener('keydown', (e) => {
