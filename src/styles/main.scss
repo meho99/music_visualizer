@@ -1,0 +1,33 @@
+@import './header.scss';
+@import './variables.scss';
+@import './bottomDiv.scss';
+
+@import url('http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext');
+// --------------- zerowanie ustawień ----------
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    outline: 0;
+    
+}
+
+#mainContainer{
+    @include flexCenter('column');
+    background-color: $light;
+    width: 100%;
+    height: 100vh;
+}
+
+#wizualizer{
+    border-radius: 1vw;
+}
+footer{
+    display: none;
+}

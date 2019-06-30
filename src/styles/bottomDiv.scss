@@ -1,0 +1,92 @@
+// ---------- style dolnego paska ----------
+
+@import './variables.scss';
+
+#bottomDiv{
+    background-color: $light;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+#progress{
+    @include flexCenter('row');
+    width: 95%;
+    height: 0.6vw;
+    max-height: 2vh;
+    min-height: 0.5vh;
+    background-color: $background;
+    margin: 0 auto;
+    margin-bottom: 0.8vw;
+    border-radius: 0.5vw;
+    
+}
+#timeUpdate{
+    height: 100%;
+    min-width: 1%;
+    background-color: $blue;
+    border-radius: 0.5vw;
+    border-right:  0.2vw solid $light;
+    border-left:  0.2vw solid $light;
+}
+#buttonDiv{
+    @include flexCenter('row');
+    background-color: $light;
+    justify-content: space-evenly;
+    padding: 0.5vw 0;
+}
+#speaker{
+    -webkit-appearance: none;
+    background-color: $background;
+    margin-left: 2vw;
+    border-radius: 0.5vw;
+    width: 12vw;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 0.5vw;
+    background: $red;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 0.5vw;
+    background: $red;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 0.5vw;
+    background: $red;
+    cursor: pointer;
+  }
+#buttonDiv button{
+    background: none;
+    cursor: pointer;
+}
+#buttonDiv .icon{
+    height: 2.8vw;
+    max-height: 8vh;
+    min-height: 4vh;
+}
+#playImage{
+    height: 5.5vw;
+    max-height: 10vh;
+    min-height: 5.5vh;
+}
+.sameWidth{
+    @include flexCenter('row');
+    width: 33.3vw;
+}
+
+#loadOverlay{display: none;}

@@ -1,0 +1,41 @@
+// ---------- style nagłówka ----------
+
+@import './variables.scss';
+
+#header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#heading{
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    color: $background;
+    margin-top: 1vh;
+}
+#fileName{
+    margin-top:1vw;
+    font-size:1vw;
+    color: $background;
+    margin-left:0.8vw;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload{
+    color: $blue;
+    cursor: pointer;
+    font-size: 1.5vw;
+    border-bottom: 0.2vw solid $blue;
+    border-radius: 0.5vw;
+    margin-left:0.8vw;
+}
+@media (max-width: 600px) {
+    #heading{
+      font-size: 6vw
+    }
+    #fileName{
+        font-size:2vw;
+    }
+  }

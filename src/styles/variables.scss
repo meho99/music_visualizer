@@ -1,0 +1,20 @@
+// ---------- kolory ----------
+
+$background: rgb(206, 203, 203);
+$light: rgb(29, 29, 29);
+$blue: #2B7EC5;
+$red: #CB3B3B;
+
+// ---------- powtarzające się style ----------
+
+@mixin flexCenter($direction){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin shadows(){
+    -webkit-box-shadow: 5px 5px 12px -1px #4C4C4C; 
+    box-shadow: 5px 5px 12px -1px #4C4C4C;
+}
