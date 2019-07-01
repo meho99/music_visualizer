@@ -1,7 +1,7 @@
-import MusicPlayer from './js/musicPlayer'
-import './styles/main.scss'
+import MusicPlayer from './musicPlayer'
+import '../styles/main.scss'
 
-import defaultSong from './music/Soft_and_Furious_-_10_-_Melancholic_Ending.mp3';
+import defaultSong from '../music/Soft_and_Furious_-_10_-_Melancholic_Ending.mp3';
 
 let Player = new MusicPlayer(defaultSong, 'Soft and Furious- "Melancholic Ending"');
 
